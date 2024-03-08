@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Começo da Fonte */
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.circeR{
+  font-family: "circe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.circeB{
+  font-family: "circe", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} 
+
+/*Fim da Fonte */
+
+.navbar{
+  background-color: #FF6600;
+}
+
+body{
+  background-color: #DBD9D9;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.profile{
+  width: 45px;
+  margin-left: -15%;
+  transition: transform 0.4s;
+}
+
+.profile:hover{
+  transform: scale(1.15);
+}
+
+#setaesquerda{
+  text-align: end;
+  margin-right: 10px;
+  margin-top: -25px;
+}
+
+#setadireita{
+  text-align: end;
+  margin-right: 10px;
+  margin-top: -25px;
+}
+
+#titulonav > h2{
+  text-align: center;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.side{
+  align-items: flex-start;
+}
+
+.sidebar{
+  margin-top: 72px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100%;
+  padding: 40px 10px 30px 10px ;
+  background-color: #F4F4F4;
+  box-shadow: 0px 25px 50px 20px #2f333631;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.sidebar button{
+  height: 60px;
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  color: #A6A4A4;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.sidebar button > span{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0px 14px 0px 12px;
+  border-radius: 20px;
+  line-height: 1;
+}
+
+.sidebar button:hover > span{
+  background: #ebeaea;
+  transition: all 0.3s;
+}
+
+.sidebar button > span > img{
+  position: relative;
+  width: 2em;
+}
+
+.topico{
+  font-size: 17px;
+}
+
+.sidebar nav {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*Ajustando sidebar com apenas os ícones*/
+
+@media (width < 600px){
+  .sidebar{
+    width: 72px;
+    height: 61%;
+  }
+
+  h2, .topico, #titulonav, #setadireita{
+    display: none;
+  }
+
+  .sidebar button > span {
+    width: 55px;
+  }
+
+}

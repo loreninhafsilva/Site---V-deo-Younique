@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-querys.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/xhc2seb.css">
+    <title>Younique</title>
+</head>
+<body style="background-color:#DBD9D9;">
+  <main>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo - Younique.png" alt="Logo" height="45" style="margin-left: 5%;" class="d-inline-block align-text-top">
+        </a>
+        <div id="profile">
+          <a href="#">
+            <img src="imagens/icon - profile.png" alt="Profile" class="profile">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <aside class="sidebar borderside" id="sidebar">
+      <button id="setadireita" style="display: none;" onclick="mostrarSidebar()">
+        <img src="imagens/seta-direita.png" alt="" >
+      </button>
+        <button id="setaesquerda" onclick="esconderSidebar()">
+          <img src="imagens/seta-esquerda.png" alt="">
+        </button>
+      <div id="titulonav" class="circeB">
+        <h2>Conteúdos</h2>
+      </div>
+      <nav class="side">
+        <button>
+          <span>
+            <img src="imagens/acordo.png" alt="Comercial">
+            <span class="topico atkinson-hyperlegible-regular"> Comercial </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <img src="imagens/coaches.png" alt="Coaches">
+            <span class="topico atkinson-hyperlegible-regular"> Coaches </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <img src="imagens/administracao.png" alt="Administração">
+            <span class="topico atkinson-hyperlegible-regular"> Administração </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <img src="imagens/modalidades.png" alt="Modalidades">
+            <span class="topico atkinson-hyperlegible-regular"> Modalidades </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <img src="imagens/academia.png" alt="Nossa história">
+            <span class="topico atkinson-hyperlegible-regular"> Nossa história </span>
+          </span>
+        </button>
+      </nav>
+    </aside>
+        
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    function esconderSidebar() {
+        var titulonav = document.getElementById("titulonav");
+        var setaesquerda = document.getElementById("setaesquerda");
+        var setadireita = document.getElementById("setadireita");
+        var sidebar = document.getElementById("sidebar");
+        // Obtém todos os elementos com a classe desejada
+        var elementos = document.getElementsByClassName("topico");
+
+        // Itera sobre os elementos e define o estilo display como "none"
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.display = "none";
+        }
+        
+        sidebar.style.width = "72px";
+        sidebar.style.height = "65%";
+        sidebar.style.marginBottom = "10px"
+        titulonav.style.display = "none";
+        setaesquerda.style.display = "none";
+        setadireita.style.display = "block";
+    }
+
+    function mostrarSidebar() {
+        var titulonav = document.getElementById("titulonav");
+        var setaesquerda = document.getElementById("setaesquerda");
+        var setadireita = document.getElementById("setadireita");
+        var sidebar = document.getElementById("sidebar");
+        // Obtém todos os elementos com a classe desejada
+        var elementos = document.getElementsByClassName("topico");
+
+        // Itera sobre os elementos e define o estilo display como "none"
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.display = "block";
+        }
+        
+        sidebar.style.width = "240px";
+        sidebar.style.height = "100%";
+        titulonav.style.display = "block";
+        setaesquerda.style.display = "block";
+        setadireita.style.display = "none";
+    }
+</script>
+</body>
+</html>
