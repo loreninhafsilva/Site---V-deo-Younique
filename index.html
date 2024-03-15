@@ -64,6 +64,9 @@
             <span class="topico atkinson-hyperlegible-regular"> Nossa história </span>
           </span>
         </button>
+        <div id="progresso">
+          <div id="textoProgresso">Seu progresso:</div>
+        </div>
       </nav>
     </aside>
         
@@ -75,6 +78,7 @@
         var setaesquerda = document.getElementById("setaesquerda");
         var setadireita = document.getElementById("setadireita");
         var sidebar = document.getElementById("sidebar");
+        var progresso = document.getElementById("progresso");
         // Obtém todos os elementos com a classe desejada
         var elementos = document.getElementsByClassName("topico");
 
@@ -89,6 +93,7 @@
         titulonav.style.display = "none";
         setaesquerda.style.display = "none";
         setadireita.style.display = "block";
+        progresso.style.display = "none";
     }
 
     function mostrarSidebar() {
@@ -96,6 +101,7 @@
         var setaesquerda = document.getElementById("setaesquerda");
         var setadireita = document.getElementById("setadireita");
         var sidebar = document.getElementById("sidebar");
+        var progresso = document.getElementById("progresso");
         // Obtém todos os elementos com a classe desejada
         var elementos = document.getElementsByClassName("topico");
 
@@ -109,6 +115,7 @@
         titulonav.style.display = "block";
         setaesquerda.style.display = "block";
         setadireita.style.display = "none";
+        progresso.style.display = "block";
     }
 </script>
 </body>

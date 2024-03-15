@@ -148,6 +148,13 @@ body{
   width: 100%;
 }
 
+#progresso > h2{
+  text-align: center;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.281);
+  font-weight: bold;
+  font-size: 19px;
+}
+
 /*Ajustando sidebar com apenas os ícones*/
 
 @media (width < 600px){
