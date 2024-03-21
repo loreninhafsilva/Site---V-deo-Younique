@@ -80,14 +80,6 @@ body{
   margin-top: -25px;
 }
 
-#titulonav > h2{
-  text-align: center;
-  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.281);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 25px;
-}
-
 .side{
   align-items: flex-start;
 }
@@ -148,11 +140,54 @@ body{
   width: 100%;
 }
 
-#progresso > h2{
-  text-align: center;
-  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.281);
-  font-weight: bold;
-  font-size: 19px;
+#progresso {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex; 
+}
+
+#textoProgresso {
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.253);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.progress {
+  height: 20px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#myProgress {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 66%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 1.1px;
+}
+
+#myBar {
+  height: 100%;
+  background-color: #FF6600;
+  border-radius: 40px;
+  width: 0;
+  animation: progress 3.5s ease-in;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /*Ajustando sidebar com apenas os ícones*/
@@ -160,15 +195,19 @@ body{
 @media (width < 600px){
   .sidebar{
     width: 72px;
-    height: 61%;
   }
 
-  h2, .topico, #titulonav, #setadireita{
+  h2, .topico, #titulonav, #setaesquerda, #progresso, #myProgress{
     display: none;
   }
 
   .sidebar button > span {
     width: 55px;
   }
+}
 
+@media (width > 600px){
+  #setadireita{
+    display: none;
+  }
 }

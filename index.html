@@ -24,48 +24,48 @@
       </div>
     </nav>
     <aside class="sidebar borderside" id="sidebar">
-      <button id="setadireita" style="display: none;" onclick="mostrarSidebar()">
+      <button id="setadireita" onclick="mostrarSidebar()">
         <img src="imagens/seta-direita.png" alt="" >
       </button>
         <button id="setaesquerda" onclick="esconderSidebar()">
           <img src="imagens/seta-esquerda.png" alt="">
         </button>
-      <div id="titulonav" class="circeB">
-        <h2>Conteúdos</h2>
-      </div>
       <nav class="side">
         <button>
-          <span>
+          <span id="botao">
             <img src="imagens/acordo.png" alt="Comercial">
             <span class="topico atkinson-hyperlegible-regular"> Comercial </span>
           </span>
         </button>
         <button>
-          <span>
+          <span id="botao">
             <img src="imagens/coaches.png" alt="Coaches">
             <span class="topico atkinson-hyperlegible-regular"> Coaches </span>
           </span>
         </button>
         <button>
-          <span>
+          <span id="botao">
             <img src="imagens/administracao.png" alt="Administração">
             <span class="topico atkinson-hyperlegible-regular"> Administração </span>
           </span>
         </button>
         <button>
-          <span>
+          <span id="botao">
             <img src="imagens/modalidades.png" alt="Modalidades">
             <span class="topico atkinson-hyperlegible-regular"> Modalidades </span>
           </span>
         </button>
         <button>
-          <span>
+          <span id="botao">
             <img src="imagens/academia.png" alt="Nossa história">
             <span class="topico atkinson-hyperlegible-regular"> Nossa história </span>
           </span>
         </button>
         <div id="progresso">
           <div id="textoProgresso">Seu progresso:</div>
+        </div>
+        <div id="myProgress">
+          <div id="myBar"></div>
         </div>
       </nav>
     </aside>
@@ -81,6 +81,8 @@
         var progresso = document.getElementById("progresso");
         // Obtém todos os elementos com a classe desejada
         var elementos = document.getElementsByClassName("topico");
+        var progresso = document.getElementById("myProgress");
+        var textoProgresso = document.getElementById("progresso");
 
         // Itera sobre os elementos e define o estilo display como "none"
         for (var i = 0; i < elementos.length; i++) {
@@ -88,12 +90,14 @@
         }
         
         sidebar.style.width = "72px";
-        sidebar.style.height = "65%";
         sidebar.style.marginBottom = "10px"
-        titulonav.style.display = "none";
+
         setaesquerda.style.display = "none";
         setadireita.style.display = "block";
         progresso.style.display = "none";
+        myProgress.style.display = "none";
+        textoProgresso.style.display = "none";
+
     }
 
     function mostrarSidebar() {
@@ -104,6 +108,7 @@
         var progresso = document.getElementById("progresso");
         // Obtém todos os elementos com a classe desejada
         var elementos = document.getElementsByClassName("topico");
+        var botao = document.getElementById("botao");
 
         // Itera sobre os elementos e define o estilo display como "none"
         for (var i = 0; i < elementos.length; i++) {
@@ -112,11 +117,17 @@
         
         sidebar.style.width = "240px";
         sidebar.style.height = "100%";
-        titulonav.style.display = "block";
         setaesquerda.style.display = "block";
         setadireita.style.display = "none";
         progresso.style.display = "block";
+        myProgress.style.display = "block";
+        textoProgresso.style.display = "block";
+
+        if(sizebar.style.width == 240){
+            botao.style.width = "100px";
+          }
     }
+    
 </script>
 </body>
 </html>
