@@ -34,98 +34,93 @@
         <button>
           <span id="botao">
             <img src="imagens/acordo.png" alt="Comercial">
-            <span class="topico atkinson-hyperlegible-regular"> Comercial </span>
+            <span class="topico atkinson-hyperlegible-regular" style="margin-right: 29px;">Comercial</span>
+            <img class="seta-para-baixo" src="imagens/seta-para-baixo.png" style="height: 25px; width: 25px;">
           </span>
         </button>
         <button>
           <span id="botao">
             <img src="imagens/coaches.png" alt="Coaches">
-            <span class="topico atkinson-hyperlegible-regular"> Coaches </span>
+            <span class="topico atkinson-hyperlegible-regular" style="margin-right: 42px;">Coaches</span>
+            <img class="seta-para-baixo" src="imagens/seta-para-baixo.png" style="height: 25px; width: 25px;">
           </span>
         </button>
         <button>
           <span id="botao">
             <img src="imagens/administracao.png" alt="Administração">
-            <span class="topico atkinson-hyperlegible-regular"> Administração </span>
+            <span class="topico atkinson-hyperlegible-regular" style="margin-right: -2px;">Administração</span>
+            <img class="seta-para-baixo" src="imagens/seta-para-baixo.png" style="height: 25px; width: 25px;">
           </span>
         </button>
         <button>
           <span id="botao">
             <img src="imagens/modalidades.png" alt="Modalidades">
-            <span class="topico atkinson-hyperlegible-regular"> Modalidades </span>
+            <span class="topico atkinson-hyperlegible-regular" style="margin-right: 10px;">Modalidades</span>
+            <img class="seta-para-baixo" src="imagens/seta-para-baixo.png" style="height: 25px; width: 25px;">
           </span>
         </button>
         <button>
           <span id="botao">
             <img src="imagens/academia.png" alt="Nossa história">
-            <span class="topico atkinson-hyperlegible-regular"> Nossa história </span>
+            <span class="topico atkinson-hyperlegible-regular">Nossa história</span> 
+            <img class="seta-para-baixo" src="imagens/seta-para-baixo.png" style="height: 25px; width: 25px; ">
           </span>
         </button>
         <div id="progresso">
           <div id="textoProgresso">Seu progresso:</div>
-        <div id="myProgress">
-          <div id="myBar"></div>
+            <div id="myProgress">
+              <div id="myBar"></div>
+            </div>
+                <div id="aulas">6/10 aulas</div>
         </div>
-        <div id="aulas">6/10 aulas</div>
-      </div>
       </nav>
     </aside>
         
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
-    function esconderSidebar() {
-        var titulonav = document.getElementById("titulonav");
-        var setaesquerda = document.getElementById("setaesquerda");
-        var setadireita = document.getElementById("setadireita");
-        var sidebar = document.getElementById("sidebar");
-        var progresso = document.getElementById("progresso");
-        // Obtém todos os elementos com a classe desejada
         var elementos = document.getElementsByClassName("topico");
-        var progresso = document.getElementById("myProgress");
-        var textoProgresso = document.getElementById("progresso");
+        var setaBaixo = document.getElementsByClassName("seta-para-baixo");
+        var botao = document.getElementById("botao");
 
-        // Itera sobre os elementos e define o estilo display como "none"
+    function esconderSidebar() {
         for (var i = 0; i < elementos.length; i++) {
             elementos[i].style.display = "none";
         }
+        for (var i = 0; i < setaBaixo.length; i++) {
+            setaBaixo[i].style.display = "none";
+        }
         
-        sidebar.style.width = "72px";
-        sidebar.style.marginBottom = "10px"
+        sidebar.style.width = "77px";
+        sidebar.style.marginBottom = "10px";
         setaesquerda.style.display = "none";
         setadireita.style.display = "block";
         progresso.style.display = "none";
-        myProgress.style.display = "none";
+        meuProgresso.style.display = "none";
         textoProgresso.style.display = "none";
-
     }
 
     function mostrarSidebar() {
-        var titulonav = document.getElementById("titulonav");
-        var setaesquerda = document.getElementById("setaesquerda");
-        var setadireita = document.getElementById("setadireita");
-        var sidebar = document.getElementById("sidebar");
-        var progresso = document.getElementById("progresso");
-        // Obtém todos os elementos com a classe desejada
-        var elementos = document.getElementsByClassName("topico");
-        var botao = document.getElementById("botao");
-
-        // Itera sobre os elementos e define o estilo display como "none"
         for (var i = 0; i < elementos.length; i++) {
             elementos[i].style.display = "block";
+            elementos[i].style.animation = "fadeIn 1.6s ease";
+        }
+
+        for (var i = 0; i < setaBaixo.length; i++) {
+            setaBaixo[i].style.display = "block";
+            setaBaixo[i].style.animation = "fadeIn 1.6s ease";
         }
         
-        sidebar.style.width = "240px";
+        sidebar.style.width = "245px";
         sidebar.style.height = "100%";
         setaesquerda.style.display = "block";
         setadireita.style.display = "none";
         progresso.style.display = "block";
         myProgress.style.display = "block";
+        myProgress.style.animation = "fadeIn 1.6s ease-in";
         textoProgresso.style.display = "block";
-
-        if(sizebar.style.width == 240){
-            botao.style.width = "100px";
-          }
+        textoProgresso.style.animation = "fadeIn 1.6s ease";
+        aulas.style.animation = "fadeIn 1.6s ease-in";
     }
     
 </script>

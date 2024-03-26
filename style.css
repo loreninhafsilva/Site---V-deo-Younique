@@ -41,21 +41,13 @@
 
 /*Fim da Fonte */
 
-.navbar{
-  background-color: #FF6600;
-}
-
-body{
-  background-color: #DBD9D9;
-}
 
 *{
   box-sizing: border-box;
 }
 
-body{
-  margin: 0;
-  font-family: sans-serif;
+.navbar{
+  background-color: #FF6600;
 }
 
 .profile{
@@ -66,6 +58,12 @@ body{
 
 .profile:hover{
   transform: scale(1.15);
+}
+
+body{
+  background-color: #DBD9D9;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 #setaesquerda{
@@ -90,12 +88,13 @@ body{
   top: 0;
   display: flex;
   flex-direction: column;
-  width: 240px;
+  width: 245px;
   height: 100%;
   padding: 40px 10px 30px 10px ;
   background-color: #F4F4F4;
   box-shadow: 0px 25px 50px 20px #2f333631;
   border-radius: 0px 15px 15px 0px;
+  transition: width 0.5s ease;
 }
 
 .sidebar button{
@@ -121,8 +120,10 @@ body{
 
 .sidebar button:hover > span{
   background: #ebeaea;
+  width: 225px;
   transition: all 0.3s;
 }
+
 
 .sidebar button > span > img{
   position: relative;
@@ -171,7 +172,7 @@ body{
   margin-left: 17%;
 }
 
-#myBar {
+#myBar{
   height: 100%;
   background-color: #FF6600;
   border-radius: 40px;
@@ -185,33 +186,8 @@ body{
   text-shadow: 1px 1.5px 4px rgba(255, 115, 0, 0.247);
 }
 
-.topico {
-  transition: display 0.3s ease;
-}
-
-/* Adicionando transição para o elemento com id 'sidebar' */
-#sidebar {
-  transition: width 0.3s ease, margin-bottom 0.3s ease;
-}
-
-/* Adicionando transição para o elemento com id 'progresso' */
-#progresso {
-  transition: display 0.3s ease;
-}
-
-/* Adicionando transição para o elemento com id 'myProgress' */
-#myProgress {
-  transition: display 0.3s ease;
-}
-
-/* Adicionando transição para o elemento com id 'textoProgresso' */
-#textoProgresso {
-  transition: display 0.3s ease;
-}
-
-/* Adicionando transição para o elemento com id 'botao' */
-#botao {
-  transition: width 0.9s ease;
+#sidebar{
+  transition: width 0.7s ease;
 }
 
 @keyframes progress {
@@ -223,18 +199,23 @@ body{
   }
 }
 
-/*Ajustando sidebar com apenas os ícones*/
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Opacidade inicial 0 */
+  }
+  to {
+    opacity: 1; /* Opacidade final 1 */
+  }
+}
 
 @media (width < 600px){
   .sidebar{
     width: 72px;
   }
 
-  h2, .topico, #titulonav, #setaesquerda, #progresso, #myProgress{
+  h2, .topico, #titulonav, #setaesquerda, #progresso, #myProgress, .seta-para-baixo{
     display: none;
   }
-
-  
 }
 
 @media (width > 600px){
