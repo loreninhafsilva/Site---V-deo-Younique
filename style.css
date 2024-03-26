@@ -120,7 +120,6 @@ body{
 
 .sidebar button:hover > span{
   background: #ebeaea;
-  width: 225px;
   transition: all 0.3s;
 }
 
