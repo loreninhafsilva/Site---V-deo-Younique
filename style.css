@@ -130,7 +130,7 @@ body{
 }
 
 .topico{
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .sidebar nav {
@@ -147,9 +147,8 @@ body{
 }
 
 #textoProgresso {
-  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.253);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .progress {
@@ -182,7 +181,7 @@ body{
 #aulas{
   margin-top: 6px;
   color: #FF6600;
-  text-shadow: 1px 1.5px 4px rgba(255, 115, 0, 0.247);
+  font-size: 14px;
 }
 
 #sidebar{
