@@ -1,60 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--Páginas Extras-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-querys.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <!---Fontes--->
     <link rel="stylesheet" href="https://use.typekit.net/xhc2seb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!---Icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <title>Younique</title>
 </head>
 <body style="background-color:#DBD9D9;" class="inter">
-  <main>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="imagens/logo - Younique.png" alt="Logo" height="45" style="margin-left: 5%;" class="d-inline-block align-text-top">
-        </a>
-        <div id="profile">
-          <a href="#">
-            <img src="imagens/icon - profile.png" alt="Profile" class="profile">
-          </a>
+    <nav>
+      <div class="container">
+        <div class="sidebar active">
+          <div class="menu-btn" onclick="cliquei()">
+            <i class="ph-bold ph-caret-left"></i>
+          </div>
+          <div id="logo">
+            <a>
+              <img src="imagens/logo - Younique.png" alt="Logo" id="younique">
+            </a>
+          </div>
+          <div class="head">
+            <div class="user-img">
+              <img src="imagens/heron.jpg" alt="">
+            </div>
+            <div class="user-details">
+              <p class="title">Administrativo</p>
+              <p class="name">Heron Heldt</p>
+            </div>
+          </div>
+          <div class="nav">
+            <div class="menu">
+              <p class="title">Conteúdos</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="imagens/acordo.png" alt="" class="icon">
+                    <span class="text">Comercial</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 1 - Como abordar um possível cliente?</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 2 - Como convencer o cliente a aceitar?</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="imagens/coaches.png" alt="" class="icon">
+                    <span class="text">Coaches</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 1 - Qual é a nossa metodologia.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 2 - Porque a ocupação das aulas é tão importante.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="imagens/modalidades.png" alt="" class="icon">
+                    <span class="text">Modalidades</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">YouBuilder</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">YouPilates</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="imagens/administracao.png" alt="" class="icon">
+                    <span class="text">Administração</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 1 - Como fazer uma nota fiscal.</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Aula 2 - Como fazer a ocupação diária.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="imagens/academia.png" alt="" class="icon">
+                    <span class="text" style="width: 116px;">Nossa história</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Quem somos nós?</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="imagens/claquete.png" alt="" height="16">
+                        <span class="text">Como surgiu a Younique.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu">
+              <p class="title">Configurações</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="imagens/configuracoes.png" alt="" class="icon">
+                    <span class="text">Configurações</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="imagens/sair.png" alt="" class="icon">
+                    <span class="text">Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
-
-    <div class="container " style="--bs-gutter-x: 0; margin-left: 0;">
-      <div class="sidebar">
-        <div class="head">
-          <div class="user-img">
-            <img src="imagens/heron.jpg" alt="">
-          </div>
-          <div class="user-details">
-            <p class="title">Comercial</p>
-            <p class="name">Heron Heldt</p>
-          </div>
-        </div>
-        <div class="nav">
-          <div class="menu">
-            <p class="title">Main</p>
-            <ul>
-              <li>
-                <a href=""></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <main>
+    <div class="conteudo">
+      <img src="imagens/prancheta.png" alt="" id="meta">
+      <p>Aqui você vai encontrar os melhores conteúdos <br> para melhorar a sua performace, com explicações <br> por texto e vídeo</p>
     </div>
+  </main>
 
-
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
-  integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
-  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
