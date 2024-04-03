@@ -31,7 +31,7 @@
 }
 
 #younique{
-  height: 6vh; 
+  height: 40px; 
 }
 
 #logo{
@@ -273,6 +273,7 @@ body{
   padding: 24px;
   height: 95vh; /* Manter a mesma altura da barra lateral */
   width: calc(100% - 16px); /* Ocupar o restante do espaço horizontal */
+  z-index: -1;
 }
 
 #meta{
