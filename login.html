@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container nunito">
+        <div class="content first-content">
+            <div class="first-column">
+                <img src="imagens/logo - Younique(branca).png" alt="Logo Younique" class="logo">
+                <img src="imagens/trabalho-em-equipe.png" alt="Trabalho em equipe" class="image">
+            </div>
+            <div class="second-column">
+                <h2 class="title">
+                   Faça parte do <br> nosso time ! 
+                </h2>
+                <form action="GET" class="form">
+                    <input type="text" placeholder="Seu nome completo" name="name" id="idname">
+                    <input type="email" placeholder="Seu email" name="email" id="idemail">
+                    <input type="text" placeholder="Sua função na Younique" list="faixa">
+                    <datalist id="faixa">
+                        <option>Coach</option>
+                        <option>Vendas</option>
+                        <option>Administração</option>
+                        <option>Limpeza</option>
+                        <option>Gerência</option>
+                    </datalist>
+                    <input type="password" placeholder="Digite a senha de segurança" name="senhaSeguranca" id="senhaSeguranca">
+                    <input type="password" placeholder="Crie uma senha única para você" name="senha" id="senha" size="24">
+                    <button class="btn" type="submit">Cadastrar</button>
+                </form>
+                <p class="chamada">Já tem cadastro ? Faça seu login !</p>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <img src="imagens/logo - Younique(branca).png" alt="Logo Younique" class="logo">
+                <img src="imagens/trabalho-em-equipe (2).png" alt="Trabalho em equipe" class="image">
+            </div>
+            <div class="second-column">
+                <h2 class="title">
+                   Seja bem-vindo, <br> colaborador !
+                </h2>
+                <form action="" class="form">
+                    <input type="email" placeholder="Seu email" name="email" id="idemail">
+                    <input type="password" placeholder="Sua senha" name="senha" id="senha">
+                    <button class="btn" type="submit">Login</button>
+                </form>
+                <p class="chamada">Ainda não tem um login ? Faça seu cadastro !</p>
+                <button class="btn">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

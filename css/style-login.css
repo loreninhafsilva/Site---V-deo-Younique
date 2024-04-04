@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*Começo da Fonte */
+.nunito{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+}
+
+/*Fim da Fonte */
+
+/* Container */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8F8F8;
+}
+
+.title{
+    text-transform: uppercase;
+    color: #ff6600;
+}
+
+.content{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 60%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #ff6600;
+    width: 40%;
+    height: 100%;
+}
+
+.logo{
+    width: 13vw;
+    height: auto;
+}
+.image{
+    width: 19vw;
+    height: auto;
+}
+
+.first-content{
+    position: relative;
+    display: flex;
+}
+
+.first-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 40%;
+}
+
+.second-column{
+    flex: 2 0 auto
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-content{
+    position: absolute;
+    display: none;
+}
