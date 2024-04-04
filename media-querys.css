@@ -1,15 +1,62 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 2560px) and (min-width: 2000px){
+    main > .conteudo > p{
+        top: 22vw;
+        font-size: 30px;
+    }
+    #meta{
+        top: 12vw;
+        line-height: 2vw;
+        margin-left: 10px;
+        height: 200px;
+    }
+    .sidebar {
+        width: 350px;
+        gap: 10px;
+        padding: 20px;
+    }
+    .sidebar.active {
+        width: 100px;
+    }
+    .menu ul li a {
+        gap: 10px;
+        font-size: 20px;
+        padding: 16px 6px;
+    }
+    .menu .sub-menu li a {
+        font-size: 18px;
+    }
+    .user-details .title, .menu .title{
+        font-size: 18px;
+    }
+    
+    .user-details .name{
+        font-size: 24px;
+    }
+    .sidebar .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #younique{
+        height: 70px; 
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px){
     main > .conteudo > p{
         top: 27vw;
-        line-height: 30px;
-        font-size: 20px;
+        font-size: 19px;
     }
     #meta{
         top: 15vw;
+        line-height: 2vw;
         margin-left: 10px;
-        height: 100px;
+        height: 10vw;
       }
 }
 
@@ -17,26 +64,26 @@
 @media screen and (max-width: 1024px){
     main > .conteudo > p{
         top: 27vw;
-        line-height: 30px;
         font-size: 1.9vw;
         margin: 10px;
     }
     #meta{
         top: 15vw;
+        line-height: 2vw;
         margin-left: 10px;
-        height: 100px;
+        height: 10vw;
       }
 }
 
 @media screen and (max-width: 988px){
     main > .conteudo > p{
         top: 30vw;
-        line-height: 20px;
         font-size: 20px;
         margin: 10px;
     }
     #meta{
         top: 20vw;
+        line-height: 4vw;
         margin-left: 10px;
         height: 90px;
       }
@@ -44,27 +91,27 @@
 
 @media screen and (max-width: 850px){
     main > .conteudo > p{
-        top: 40vw;
-        line-height: 20px;
-        font-size: 1.8vw;
+        top: 35vw;
+        font-size: 2vw;
         margin: 10px;
     }
     #meta{
-        top: 25vw;
+        top: 20vw;
+        line-height: 4vw;
         margin-left: 10px;
-        height: 100px;
+        height: 15vw;
       }
 }
 
 @media screen and (max-width: 500px){
     main > .conteudo > p{
         top: 60vw;
-        line-height: 20px;
         font-size: 13px;
         margin: 10px;
     }
     #meta{
         top: 35vw;
+        line-height: 4vw;
         margin-left: 10px;
         height: 90px;
       }
@@ -72,13 +119,13 @@
 
 @media screen and (max-width: 380px){
     main > .conteudo > p{
-        top: 45%;
-        line-height: 20px;
-        font-size: 14px;
+        top: 70vw;
+        font-size: 13px;
         margin: 10px;
     }
     #meta{
-        top: 25%;
+        top: 40vw;
+        line-height: 4vw;
         margin-left: 10px;
         height: 90px;
       }
@@ -87,48 +134,33 @@
 /*Galaxy Fold*/
 @media screen and (max-width: 320px){
     #meta{
-        top: 25%;
+        top: 50vw;
+        line-height: 4vw;
         margin-left: 1px;
         height: 60px;
     }
     main > .conteudo > p{
-        top: 40%;
-        line-height: 13px;
+        top: 70vw;
         font-size: 10px;
         margin: 10px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 820px){
     .sidebar {
-        position: relative;
         width: 140px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
         gap: 5px;
-        background-color: #fff;
         padding: 15px;
-        border-radius: 0px 30px 30px 0px;
     }
     .sidebar.active {
-        width: 70px;
+        width: 60px;
     }
-
     .menu ul li a {
-        display: flex;
-        align-items: center;
         gap: 5px;
         font-size: 10px;
-        font-weight: 500;
-        color: #757575;
-        text-decoration: none;
         padding: 8px 3px;
-        border-radius: 8px;
-        transition: all 0.3s;
     }
     .menu .sub-menu li a {
-        padding: 10px 8px;
         font-size: 9px;
     }
     .user-details .title, .menu .title{
@@ -139,10 +171,11 @@
         font-size: 12px;
     }
     .sidebar .head {
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
+
     #younique{
         height: 25px; 
-      }
+    }
 }

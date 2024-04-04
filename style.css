@@ -57,11 +57,11 @@ body{
   flex-direction: column;
   gap: 20px;
   background-color: #fff;
-  padding: 24px;
+  padding: 15px;
   border-radius: 0px 30px 30px 0px;
   transition: all 0.3s;
   float: left;
-  margin-top: 10px;
+
 }
 
 .sidebar .head{
@@ -78,6 +78,7 @@ body{
   border-radius: 50%;
   overflow: hidden;
   transition: all 0.3s;
+  margin-left: 8px;
 }
 
 .user-img img{
@@ -127,7 +128,7 @@ body{
 }
 
 .menu ul li .icon{
-  height: 20px;
+  height: 25px;
 }
 
 .menu .text{
@@ -288,7 +289,6 @@ main{
 main > .conteudo > p{
   position: absolute;
   top: 55%;
-  line-height: 26px;
   color: #757575;
   font-weight: 500;
 }

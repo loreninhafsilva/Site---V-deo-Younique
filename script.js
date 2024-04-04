@@ -8,17 +8,16 @@ $(".menu > ul > li").click(function(e) {
 
 $(".menu-btn").click(function(){
     $(".sidebar").toggleClass("active");
+
+    const logo = document.getElementById('logo');
+
+    if (logo.style.display === 'flex') {
+        logo.style.display = 'none';
+    } else {
+        logo.style.display = 'flex';
+    }
 })
 
-function cliquei(){
-    var logo = document.getElementById("logo");
-    var side = document.getElementsByClassName("sidebar")[0];
-
-    var sideWidth = window.getComputedStyle(side).width;
-
-    if(sideWidth === "92px") {
-        logo.style.display = "flex";
-    } else {
-        logo.style.display = "none";
-    }
-}
+$("#logo").click(function(){
+    $("#younique").toggleClass("active");
+})
