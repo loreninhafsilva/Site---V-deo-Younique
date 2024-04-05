@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-login.css">
+    <link rel="stylesheet" href="css/media-querys-login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
     <title>Login</title>
 </head>
 <body>
@@ -22,22 +24,42 @@
                    Faça parte do <br> nosso time ! 
                 </h2>
                 <form action="GET" class="form">
-                    <input type="text" placeholder="Seu nome completo" name="name" id="idname">
-                    <input type="email" placeholder="Seu email" name="email" id="idemail">
-                    <input type="text" placeholder="Sua função na Younique" list="faixa">
+                    <label class="label-input" for="">
+                        <span class="material-symbols-outlined icon">person</span>
+                        <input type="text" placeholder="Seu nome completo" name="name" id="idname" class="nunito" required>
+                    </label>
+                    <label class="label-input" for="">
+                        <span class="material-symbols-outlined icon">mail</span>
+                        <input type="email" placeholder="Seu email" name="email" id="idemail" class="nunito" required>
+                    </label>
+                    <label class="label-input" for="">
+                        <span class="material-symbols-outlined icon">badge</span>
+                        <input type="text" placeholder="Sua função na Younique" list="faixa" class="nunito" required>
+                    </label>
                     <datalist id="faixa">
-                        <option>Coach</option>
-                        <option>Vendas</option>
-                        <option>Administração</option>
-                        <option>Limpeza</option>
-                        <option>Gerência</option>
+                        <option class="nunito">Coach</option>
+                        <option class="nunito">Vendas</option>
+                        <option class="nunito">Administração</option>
+                        <option class="nunito">Limpeza</option>
+                        <option class="nunito">Gerência</option>
                     </datalist>
-                    <input type="password" placeholder="Digite a senha de segurança" name="senhaSeguranca" id="senhaSeguranca">
-                    <input type="password" placeholder="Crie uma senha única para você" name="senha" id="senha" size="24">
-                    <button class="btn" type="submit">Cadastrar</button>
+                    <label class="label-input" for="">
+                        <span class="material-symbols-outlined icon">pin</span>
+                        <input type="password" placeholder="Digite a senha de segurança" name="senhaSeguranca" id="senhaSeguranca" class="nunito" required>
+                    </label>
+                    <label class="label-input" for="">
+                        <span class="material-symbols-outlined icon">lock</span>
+                        <input type="password" placeholder="Crie uma senha única para você" name="senha" id="senha" class="nunito" required>
+                    </label>
+                    <button class="btn btn-primary" type="submit"><span class="nunito">Cadastrar</span></button>
                 </form>
-                <p class="chamada">Já tem cadastro ? Faça seu login !</p>
-                <button class="btn">Login</button>
+                <div class="login">
+                    <p class="chamada">Já tem cadastro ? Faça seu login !</p>
+                    <button class="btn btn-secundary">
+                        <span class="nunito">Login</span>
+                            <span class="material-symbols-outlined" style="padding-left: 10px; vertical-align: middle; font-size: 15px;">login</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="content second-content">
@@ -50,12 +72,23 @@
                    Seja bem-vindo, <br> colaborador !
                 </h2>
                 <form action="" class="form">
-                    <input type="email" placeholder="Seu email" name="email" id="idemail">
-                    <input type="password" placeholder="Sua senha" name="senha" id="senha">
-                    <button class="btn" type="submit">Login</button>
+                    <label class="label-input"  for="">
+                        <span class="material-symbols-outlined icon">mail</span>
+                        <input type="email" placeholder="Seu email" name="email" id="idemail" class="nunito" required>
+                    </label>
+                    <label class="label-input"  for="">
+                        <span class="material-symbols-outlined icon"> password</span>
+                        <input type="password" placeholder="Sua senha" name="senha" id="senha" class="nunito" required >
+                    </label>
+                    <button class="btn btn-primary" type="submit">
+                        <span class="nunito">Login</span>
+                            <span class="material-symbols-outlined" style="padding-left: 10px; vertical-align: middle; font-size: 15px;">login</span>
+                    </button>
                 </form>
-                <p class="chamada">Ainda não tem um login ? Faça seu cadastro !</p>
-                <button class="btn">Login</button>
+                <div class="login">
+                    <p class="chamada">Ainda não tem um login ? Faça seu cadastro !</p>
+                    <button class="btn btn-secundary"><span class="nunito">Cadastro</span></button>
+                </div>
             </div>
         </div>
     </div>

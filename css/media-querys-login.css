@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 2560px) and (min-width: 2000px){
+
+
+}
+
+
+@media screen and (max-width: 1440px){
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .form input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 988px){
+
+}
+
+@media screen and (max-width: 850px){
+    .first-column{
+        display: none;
+    }
+    .content::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px){
+}
+
+@media screen and (max-width: 500px){
+    .form input{
+        width: 200px;
+    }
+    .chamada{
+        font-size: 6.5px;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+}
+
+/*Galaxy Fold*/
+@media screen and (max-width: 320px){
+
+}
