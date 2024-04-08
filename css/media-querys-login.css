@@ -12,9 +12,6 @@
 
 
 @media screen and (max-width: 1024px){
-    .form input{
-        width: 300px;
-    }
 }
 
 @media screen and (max-width: 988px){
@@ -28,25 +25,48 @@
     .content::before{
         display: none;
     }
+    .label-input{
+        width: 55vw;
+        height: 30px;
+    }
+    .chamada{
+        font-size: 2vw;
+    }
+    .title{
+        font-size: 3vw;
+    }
+    .form input::placeholder {
+        font-size: 11px;
+    }
+    .icon{        
+        font-size: 20px !important;
+    }
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 650px){
+    .title{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (max-width: 500px){
-    .form input{
-        width: 200px;
+    .title{
+        font-size: 5vw;
     }
     .chamada{
-        font-size: 6.5px;
+        font-size: 2.5vw;
     }
 }
 
 @media screen and (max-width: 380px){
-
+    .chamada{
+        font-size: 3vw;
+    }
 }
 
 /*Galaxy Fold*/
 @media screen and (max-width: 320px){
-
+    .chamada{
+        font-size: 3vw;
+    }
 }

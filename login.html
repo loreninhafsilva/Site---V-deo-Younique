@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/style-login.css">
     <link rel="stylesheet" href="css/media-querys-login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -51,17 +51,20 @@
                         <span class="material-symbols-outlined icon">lock</span>
                         <input type="password" placeholder="Crie uma senha única para você" name="senha" id="senha" class="nunito" required>
                     </label>
-                    <button class="btn btn-primary" type="submit"><span class="nunito">Cadastrar</span></button>
+                    <button class="btn btn-primary">
+                        <span class="nunito">Cadastrar</span>
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
+                    </button>
                 </form>
                 <div class="login">
                     <p class="chamada">Já tem cadastro ? Faça seu login !</p>
-                    <button class="btn btn-secundary">
-                        <span class="nunito">Login</span>
-                            <span class="material-symbols-outlined" style="padding-left: 10px; vertical-align: middle; font-size: 15px;">login</span>
-                    </button>
+                    <button id="signin" class="btn btn-secundary"><span class="nunito">Login</span></button>
                 </div>
             </div>
         </div>
+
         <div class="content second-content">
             <div class="first-column">
                 <img src="imagens/logo - Younique(branca).png" alt="Logo Younique" class="logo">
@@ -80,17 +83,21 @@
                         <span class="material-symbols-outlined icon"> password</span>
                         <input type="password" placeholder="Sua senha" name="senha" id="senha" class="nunito" required >
                     </label>
-                    <button class="btn btn-primary" type="submit">
+                    <button class="btn btn-primary">
                         <span class="nunito">Login</span>
-                            <span class="material-symbols-outlined" style="padding-left: 10px; vertical-align: middle; font-size: 15px;">login</span>
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
                     </button>
                 </form>
                 <div class="login">
-                    <p class="chamada">Ainda não tem um login ? Faça seu cadastro !</p>
-                    <button class="btn btn-secundary"><span class="nunito">Cadastro</span></button>
+                    <p class="chamada">Ainda não tem um login ? <br> Faça seu cadastro !</p>
+                    <button id="signup" class="btn btn-secundary"><span class="nunito">Cadastro</span></button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="js/script-login.js"></script>
 </body>
 </html>
