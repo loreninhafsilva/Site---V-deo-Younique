@@ -51,8 +51,7 @@ body {
 }
 
 .title{
-    position: relative;
-    margin-top: -40px;
+
     text-transform: uppercase;
     color: #ff6600;
     text-align: center;
@@ -111,11 +110,12 @@ body {
 }
 
 .second-column{
-    margin-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
+    height: 100%;
+    justify-content: center;
 }
 
 .form{
@@ -186,8 +186,7 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
 }
 
 .icon{

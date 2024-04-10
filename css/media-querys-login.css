@@ -11,7 +11,28 @@
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1075px){
+.btn-primary {
+    margin-top: 5px;
+}
+.title{
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.label-input {
+    height: 30px;
+}
+
+.btn{
+    height: 25px;
+    font-size: 12px;
+}
+
+.btn-secundary {
+    margin-top: 7.5px;
+}
+
 }
 
 @media screen and (max-width: 988px){
@@ -19,12 +40,6 @@
 }
 
 @media screen and (max-width: 768px){
-    /* .first-column{
-        display: none;
-    }
-    .content::before{
-        display: none;
-    } */
 
     .form{
         width: 90%;
@@ -52,18 +67,20 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
+        justify-content: center;
         z-index: 10;
         width: 100%;
     }
-    
+
+    .first-content .first-column,
     .second-content .first-column{
-        position: relative;
-    top: 2%;
+        height: 40%;
     }
 
-    .first-content .first-column{
-        position: relative;
-        top: 4%;
+    .first-content .second-column,
+    .second-content .second-column{
+        margin-top: 0;
+        height: 60%;
     }
 
     .logo{
@@ -75,7 +92,7 @@
     }
 
     .login{
-        top: 16px;
+        top: 10px;
     }
 
     .sign-in-js .content::before{
@@ -114,10 +131,7 @@
         height: 30px;
     }
     .chamada{
-        font-size: 2vw;
-    }
-    .title{
-        font-size: 3vw;
+        font-size: 13px;
     }
     .form input::placeholder {
         font-size: 12px;
@@ -125,20 +139,17 @@
     .icon{        
         font-size: 20px !important;
     }
-    .first-content > .second-column > .title{
-        margin-top: 0px;
-    }
 }
 
 @media screen and (max-width: 650px){
     .title{
-        font-size: 3.5vw;
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 500px){
     .title{
-        font-size: 5vw;
+        font-size: 14px;
     }
     .chamada{
         font-size: 2.5vw;
@@ -147,13 +158,13 @@
 
 @media screen and (max-width: 380px){
     .chamada{
-        font-size: 3vw;
+        font-size: 13px;
     }
 }
 
 /*Galaxy Fold*/
 @media screen and (max-width: 320px){
     .chamada{
-        font-size: 3vw;
+        font-size: 12px;
     }
 }
