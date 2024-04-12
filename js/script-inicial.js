@@ -21,3 +21,23 @@ $(".menu-btn").click(function(){
 $("#logo").click(function(){
     $("#younique").toggleClass("active");
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os elementos com a classe .aula
+    const aulas = document.querySelectorAll('.aula');
+
+      aulas.forEach(function(aula) {
+      aula.addEventListener('click', function() {
+        const titulo = document.querySelector('.titulo');
+        
+        // Define o texto que deseja adicionar
+        const texto = aula.textContent;
+        
+        // Adiciona o texto à classe .conteudo
+        titulo.textContent = texto;
+
+        conteudo.classList.add('ativo');
+      });
+    });
+  });
+  

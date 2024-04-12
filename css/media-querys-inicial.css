@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 2560px) and (min-width: 2000px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 22vw;
         font-size: 30px;
     }
@@ -48,7 +48,7 @@
 
 
 @media screen and (max-width: 1440px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 27vw;
         font-size: 19px;
     }
@@ -62,7 +62,7 @@
 
 
 @media screen and (max-width: 1024px){
-    main > .conteudo > p{
+    .inicio > p{
         top: 27vw;
         font-size: 1.9vw;
         margin: 10px;
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 988px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 30vw;
         font-size: 20px;
         margin: 10px;
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 850px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 35vw;
         font-size: 2vw;
         margin: 10px;
@@ -104,7 +104,7 @@
 }
 
 @media screen and (max-width: 500px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 60vw;
         font-size: 13px;
         margin: 10px;
@@ -118,7 +118,7 @@
 }
 
 @media screen and (max-width: 380px){
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 70vw;
         font-size: 13px;
         margin: 10px;
@@ -139,7 +139,7 @@
         margin-left: 1px;
         height: 60px;
     }
-    main > .conteudo > p{
+    main > .inicio > p{
         top: 70vw;
         font-size: 10px;
         margin: 10px;
