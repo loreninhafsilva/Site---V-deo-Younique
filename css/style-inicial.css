@@ -277,7 +277,7 @@ body{
   margin-right: 9px;
   margin-top: 20px; /* Largura da barra lateral + 30 pixels de espaço */
   padding: 24px;
-  height: 95vh; /* Manter a mesma altura da barra lateral */
+  height: 100%;
   width: calc(100% - 16px); /* Ocupar o restante do espaço horizontal */
   z-index: -1;
 }
@@ -317,4 +317,24 @@ main{
 .conteudo.ativo h1 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.texto{
+  margin-top: 20px;
+}
+
+.texto > p{
+  margin-top: 10px;
+  text-indent: 5em;
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+ol > li{
+  list-style-type: decimal;
+}
+
+.form-container{
+  display: none;
 }
