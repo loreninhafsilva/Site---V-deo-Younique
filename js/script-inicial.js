@@ -22,7 +22,7 @@ $("#logo").click(function(){
     $("#younique").toggleClass("active");
 })
 
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Seleciona todos os elementos com a classe .aula
     const aulas = document.querySelectorAll('.link');
 
@@ -54,6 +54,12 @@ $("#logo").click(function(){
           textoElement.appendChild(paragrafoElement);
         });
 
+        // Remove qualquer iframe existente
+        const videoExistente = document.querySelector('.video iframe');
+        if (videoExistente) {
+          videoExistente.remove();
+        }
+
         // Cria um novo iframe
         const novoIframe = document.createElement('iframe');
         novoIframe.width = "560";
@@ -69,12 +75,6 @@ $("#logo").click(function(){
         // Define o link do vídeo a ser exibido
         const videoLink = aula.getAttribute('data-video');
         novoIframe.src = videoLink;
-
-        // Remove qualquer iframe existente
-        const videoExistente = document.querySelector('.video iframe');
-        if (videoExistente) {
-          videoExistente.remove();
-        }
 
         // Adiciona o novo iframe à classe .video
         document.querySelector('.video').appendChild(novoIframe);
