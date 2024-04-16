@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!---Icons-->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <title>Younique</title>
 </head>
 <body style="background-color:#DBD9D9;" class="inter">
@@ -51,7 +51,7 @@
                   </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#" onclick="showForm('aula1')" class="link" data-video="https://www.youtube.com/embed/F-etN4tyOss?si=enSjj6hrCNfoK4xt" 
+                      <a href="#" class="link" data-video="https://www.youtube.com/embed/F-etN4tyOss?si=enSjj6hrCNfoK4xt" 
                       data-texto=" O descanso entre os treinos é essencial, mas nem sempre isso implica em inatividade total. Há dias em que o corpo precisa de descanso passivo, e outros em que uma abordagem mais ativa é a melhor maneira de potencializar a recuperação. Isso depende da carga de treino e de qual a intensidade do desgaste.
                       Recuperação passiva significa o repouso total da atividade física, enquanto recuperação ativa envolve incluir exercícios de baixa intensidade que promovem o fluxo sanguíneo para os músculos, ajudando-os a se recuperar melhor e mais rapidamente. O segredo da recuperação ativa é estar ativo o suficiente para aumentar o fluxo sanguíneo, mas com atividade leve o suficiente para permitir que seus músculos se recuperem.">
                         <img src="imagens/claquete.png" alt="" height="16">
@@ -59,7 +59,8 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" onclick="showForm('aula2')" class="link" data-video="https://www.youtube.com/embed/Et-3u1hQKA4?si=M9NXYNSaKUx_GwM9">
+                      <a href="#" class="link" data-video="https://www.youtube.com/embed/zezx9I4TFo4?si=NW-B_412m_meHutP" 
+                      data-texto="bçábláblá">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">Aula 2 - Como convencer o cliente a aceitar?</span>
                       </a>
@@ -74,13 +75,13 @@
                   </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#" onclick="showForm('aula3')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">Aula 1 - Qual é a nossa metodologia.</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#" onclick="showForm('aula4')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">Aula 2 - Porque a ocupação das aulas é tão importante.</span>
                       </a>
@@ -95,13 +96,13 @@
                   </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#" onclick="showForm('aula5')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">YouBuilder</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#" onclick="showForm('aula6')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">YouPilates</span>
                       </a>
@@ -116,13 +117,13 @@
                   </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#" onclick="showForm('aula7')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">Aula 1 - Como fazer uma nota fiscal.</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#" onclick="showForm('aula8')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="aula text">Aula 2 - Como fazer a ocupação diária.</span>
                       </a>
@@ -137,18 +138,23 @@
                   </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#" onclick="showForm('aula9')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="text">Quem somos nós?</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#" onclick="showForm('aula10')" class="link">
+                      <a href="#" class="link">
                         <img src="imagens/claquete.png" alt="" height="16">
                         <span class="text">Como surgiu a Younique.</span>
                       </a>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -173,55 +179,79 @@
         </div>
       </div>
     </nav>
-  <main>
+  <main style="height: 100%;">
     <div class="conteudo">
-      <!-- <span class="inicio">
-        <img src="imagens/prancheta.png" id="meta">
-        <p id="texto">Aqui você vai encontrar os melhores conteúdos <br> para melhorar a sua performace, <br> com explicações por texto e vídeo</p>
-      </span> -->
-      <div class="conteudos">
-        <h2 class="titulo"></h2>
-        <span class="video"></span>
-        <p class="texto"></p>
-          <h3>Você aprendeu tudo?</h3>
-          <h4>Então responda as perguntas abaixo:</h4>
-          <div class="main-content">
-            <div id="aula1" class="form-container">
-                <h2>Formulário da Aula 1</h2>
-            </div>
-            <div id="aula2" class="form-container">
-                <h2>Formulário da Aula 2</h2>
-            </div>
-            <div id="aula3" class="form-container">
-                <h2>Formulário da Aula 3</h2>
-            </div>
-            <div id="aula4" class="form-container">
-              <h2>Formulário da Aula 4</h2>
-            </div>
-            <div id="aula5" class="form-container">
-              <h2>Formulário da Aula 5</h2>
-            </div>
-            <div id="aula6" class="form-container">
-              <h2>Formulário da Aula 6</h2>
-            </div>
-            <div id="aula7" class="form-container">
-              <h2>Formulário da Aula 7</h2>
-            </div>
-            <div id="aula8" class="form-container">
-              <h2>Formulário da Aula 8</h2>
-            </div>
-            <div id="aula9" class="form-container">
-              <h2>Formulário da Aula 9</h2>
-            </div>
-            <div id="aula10" class="form-container">
-              <h2>Formulário da Aula 10</h2>
-            </div>
+      <div class="container inicio centralizando">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <img src="imagens/prancheta.png" id="meta">
+          </div>
+          <div class="col-12" id="texto">
+            Aqui você vai encontrar os melhores conteúdos <br> para melhorar a sua performace, <br> com explicações por texto e vídeo
+          </div>
         </div>
+      </div>
+      <div class="conteudos" style="width: 100%;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="titulo"></h2>
+            </div>
+            <div class="col-12">
+              <span class="video"></span>
+            </div>
+            <div class="col-12">
+              <p class="texto"></p>
+            </div>
+            <div class="col-12">
+              <span id="tituloForms">
+                <h3>Você aprendeu tudo?</h3>
+                <h4>Então responda as perguntas abaixo:</h4>
+              </span>
+              </div>
+            <div class="col-12">
+              <div class="main-content">
+              <div id="aula1" class="form-container">
+                <h2>Formulário da Aula 1</h2>
+              </div>
+              <div id="aula2" class="form-container">
+                <h2>Formulário da Aula 2</h2>
+              </div>
+              <div id="aula3" class="form-container">
+                <h2>Formulário da Aula 3</h2>
+              </div>
+              <div id="aula4" class="form-container">
+                <h2>Formulário da Aula 4</h2>
+              </div>
+              <div id="aula5" class="form-container">
+                <h2>Formulário da Aula 5</h2>
+              </div>
+              <div id="aula6" class="form-container">
+                <h2>Formulário da Aula 6</h2>
+              </div>
+              <div id="aula7" class="form-container">
+                <h2>Formulário da Aula 7</h2>
+              </div>
+              <div id="aula8" class="form-container">
+                <h2>Formulário da Aula 8</h2>
+              </div>
+              <div id="aula9" class="form-container">
+                <h2>Formulário da Aula 9</h2>
+              </div>
+              <div id="aula10" class="form-container">
+                <h2>Formulário da Aula 10</h2>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
     integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
     crossorigin="anonymous"></script>

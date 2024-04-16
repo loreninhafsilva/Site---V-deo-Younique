@@ -28,8 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     aulas.forEach(function(aula) {
       aula.addEventListener('click', function() {
+        const inicio = document.querySelector('.inicio');
+        const tituloForms = document.querySelector('#tituloForms');
+        inicio.style.display = "none";
+        tituloForms.style.display = "block";
+
         const titulo = document.querySelector('.titulo');
         const conteudo = document.querySelector('.conteudo');
+        conteudo.classList.add('ativo');
 
         // Define o texto que deseja adicionar
         const cont = aula.textContent;
@@ -37,6 +43,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // Adiciona o texto à classe .conteudo
         titulo.textContent = cont;
         titulo.style.marginTop = "10px";
+
+        const videoExistente = document.querySelector('.video iframe');
+        if (videoExistente) {
+          videoExistente.remove();
+        }
+
+        const novoIframe = document.createElement('iframe');
+        novoIframe.height = "300px";
+        novoIframe.width = "60%";
+        novoIframe.title = "YouTube video player";
+        novoIframe.frameBorder = "0";
+        novoIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        novoIframe.referrerPolicy = "strict-origin-when-cross-origin";
+        novoIframe.allowFullscreen = true;
+        novoIframe.style.marginTop = "20px";
+        novoIframe.style.borderRadius = "15px";
+
+        const videoLink = aula.getAttribute('data-video');
+        novoIframe.src = videoLink;
+        document.querySelector('.video').appendChild(novoIframe);
 
         const texto = aula.getAttribute('data-texto');
 
@@ -54,32 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
           textoElement.appendChild(paragrafoElement);
         });
 
-        // Remove qualquer iframe existente
-        const videoExistente = document.querySelector('.video iframe');
-        if (videoExistente) {
-          videoExistente.remove();
-        }
-
-        // Cria um novo iframe
-        const novoIframe = document.createElement('iframe');
-        novoIframe.width = "560";
-        novoIframe.height = "315";
-        novoIframe.title = "YouTube video player";
-        novoIframe.frameBorder = "0";
-        novoIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        novoIframe.referrerPolicy = "strict-origin-when-cross-origin";
-        novoIframe.allowFullscreen = true;
-        novoIframe.style.marginTop = "20px";
-        novoIframe.style.borderRadius = "15px";
-
-        // Define o link do vídeo a ser exibido
-        const videoLink = aula.getAttribute('data-video');
-        novoIframe.src = videoLink;
-
-        // Adiciona o novo iframe à classe .video
-        document.querySelector('.video').appendChild(novoIframe);
-
-        conteudo.classList.add('ativo');
       });
     });
   });
