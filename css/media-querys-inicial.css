@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 2560px) and (min-width: 2000px){
-    #texto{
-        font-size: 30px;
-    }
+@media screen and (max-width: 2700px) and (min-width: 1445px){
     .sidebar {
         width: 350px;
         gap: 10px;
@@ -35,6 +32,10 @@
     #younique{
         height: 70px; 
         margin-bottom: 5px;
+    }
+
+    #texto{
+        font-size: 40px;
     }
 
 }

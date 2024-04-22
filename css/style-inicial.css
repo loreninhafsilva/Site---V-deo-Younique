@@ -225,6 +225,7 @@ body{
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  z-index: 3;
 }
 
 .sidebar.active .menu > ul > li > a .text::after{
@@ -266,6 +267,37 @@ body{
 #logo{
   display: none;
 } 
+
+#progressBar {
+  background-color: #f9f9f9; /* Cor de fundo da barra de progresso */
+  border-radius: 10px;
+}
+
+#progressBar::-webkit-progress-bar {
+  background-color: #f9f9f9; /* Cor de fundo da barra de progresso (navegadores WebKit) */
+}
+
+#progressBar::-webkit-progress-value {
+  background-color: #ff8c00; /* Cor da barra de progresso (navegadores WebKit) */
+}
+
+#progressBar::-moz-progress-bar {
+  background-color: #ff8c00; /* Cor da barra de progresso (Firefox) */
+}
+
+#progressBar::-ms-fill {
+  background-color: #ff8c00; /* Cor da barra de progresso (Internet Explorer) */
+}
+
+#progressBar {
+  height: 20px; /* Altura da barra de progresso */
+  display: none;
+}
+
+#progresso{
+  display: none;
+}
+
 .conteudo{
   display: flex;
   flex-direction: column;
@@ -275,11 +307,12 @@ body{
   border-radius: 25px ;
   margin-left: 16px;
   margin-right: 9px;
+  margin-bottom: 10px;
   margin-top: 20px; /* Largura da barra lateral + 30 pixels de espaço */
   padding: 24px;
   height: 100%;
   width: calc(100% - 16px); /* Ocupar o restante do espaço horizontal */
-  z-index: -1;
+  z-index: 1;
 }
 
 .row{
@@ -323,7 +356,7 @@ main{
 
 .texto > p{
   margin-top: 10px;
-  text-indent: 5em;
+  text-indent: 2em;
   text-align: justify;
   padding-left: 10%;
   padding-right: 10%;
@@ -335,8 +368,55 @@ ol > li{
 
 .form-container{
   display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
 }
 
 #tituloForms{
   display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-container > ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-container > ol li {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#formAula1 > ol > li {
+  text-align: left;
+  margin-bottom: 10px;
 }

@@ -10,11 +10,17 @@ $(".menu-btn").click(function(){
     $(".sidebar").toggleClass("active");
 
     const logo = document.getElementById('logo');
+    const progress = document.getElementById('progressBar');
+    const progresso = document.getElementById('progresso');
 
     if (logo.style.display === 'flex') {
+        progress.style.display = 'none';
         logo.style.display = 'none';
+        progresso.style.display = 'none';
     } else {
+        progress.style.display = 'flex';
         logo.style.display = 'flex';
+        progresso.style.display = 'flex';
     }
 })
 
@@ -92,7 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     // Mostra apenas o formulário correspondente ao ID clicado
     var selectedForm = document.getElementById(formId);
-    selectedForm.style.display = 'block';
+    selectedForm.style.display = 'flex';
+   
 }
 
   
